@@ -1,0 +1,20 @@
+/* CSS */
+.remove-button {
+  background-color: #ff0000; /* Red background color */
+  color: #ffffff; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding inside the button */
+  cursor: pointer; /* Cursor style on hover */
+  margin-top: 1%; /* Margin between the buttons */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.addbutton {
+  background-color: #1bd65cda; /* Red background color */
+  color: #ffffff; /* White text color */
+  border: none; /* No border */
+  padding: 7px 20px; /* Padding inside the button */
+  cursor: pointer; /* Cursor style on hover */
+  margin-top: 1%; /* Margin between the buttons */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
