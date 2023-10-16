@@ -23,8 +23,11 @@
   </div>
 
   <body>
-      <!-- <div><h1 class="fs-2 text-center text-white text-bg-dark" style="height: 50px;">Personal Details</h1> </div>  -->
-      <div class="text-center" style="background-color: #464cbe; color: #FFFF; height: 50px; padding-top: 12px; font-weight: bold;">
+    <div class="text-center mt-2" style="background-color: #37383d; padding: 25px;">
+      <img src="dittlogo.png" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <div class="text-center mt-1" style="background-color: #2b2725; color: #FFFF; height: 50px; padding-top: 12px; font-weight: bold;">
     S-band Operation Log
     </div> 
     <form method="post" action="https://script.google.com/macros/s/AKfycbzPpUW0X5iJNQebenf0618zl3V4LHLAnuBd-NlgsbPkWcD6RRM96e03zCAHN10P89SH/exec" name="S-band form">
@@ -71,7 +74,7 @@
       <div
         class="text-center"
         style="
-          background-color: #3a648f;
+          background-color: #453f3c;
           color: #ffff;
           height: 50px;
           padding-top: 12px;
@@ -85,12 +88,12 @@
           <div class="row py-3">
             <div class="col-md-6 mt-md-0 mt-3">
               <label style="font-weight: 600">AoS(Local Time)</label>
-              <input type="text" class="form-control" name="aosLocalTime" required />
+              <input type="time" class="form-control" name="aosLocalTime" required />
             </div>
 
             <div class="col-md-6 mt-md-0 mt-3">
               <label style="font-weight: 600">LoS(Local Time)</label>
-              <input type="text" class="form-control" name="losLocalTime" required />
+              <input type="time" class="form-control" name="losLocalTime" required />
             </div>
 
             <div class="col-md-6 mt-md-0 mt-3">
@@ -117,7 +120,7 @@
       <div
         class="text-center"
         style="
-          background-color: #3a648f;
+          background-color: #453f3c;
           color: #ffff;
           height: 50px;
           padding-top: 12px;
@@ -141,38 +144,31 @@
                   <option selected hidden>Choose Operation Type</option>
                   <option>Full PL_PB_1Mbps</option>
                   <option>Partial FHK_PB</option>
+                  <option>Partial PL_PB_1Mbps</option> 
                   <option>Imaging</option>
                 </select>
               </div>
 
               <div class="col-md-6 mt-md-0 mt-3">
                 <label style="font-weight: 600">Operation ON Time(UTC)</label>
-                <input type="text" class="form-control" name="operationOnTime" required />
+                <input type="time" class="form-control" name="operationOnTime" required />
               </div>
 
               <div class="col-md-6 mt-md-0 mt-3">
                 <label style="font-weight: 600">Operation OFF Time(UTC)</label>
-                <input type="text" class="form-control" name="operationOffTime" required />
+                <input type="time" class="form-control" name="operationOffTime" required />
               </div>
 
               <div class="col-md-6 mt-md-0 mt-3">
                 <label style="font-weight: 600">Data Break</label>
-                <input type="number" class="form-control" name="dataBreak" required />
+                <input type="number" class="form-control" name="dataBreak" id="dataBreakInput" />
               </div>
 
               <div class="col-md-6 mt-md-0 mt-3">
-                <label
-                  for="inputState"
-                  class="form-label"
-                  style="font-weight: 600"
-                  >Imaging Area</label
-                >
-                <select id="inputState" class="form-select" name="imagingArea">
-                  <option selected hidden>Choose Country</option>
-                  <option>India</option>
-                  <option>Bhutan</option>
-                </select>
+                <label style="font-weight: 600">Imaging Area</label>
+                <input type="text" class="form-control" name="imagingArea"id="dataBreakInput"/>
               </div>
+
             </div>
           </div>
         </div>
@@ -183,7 +179,7 @@
       <div
         class="text-center"
         style="
-          background-color: #3a648f;
+          background-color: #453f3c;
           color: #ffff;
           height: 50px;
           padding-top: 12px;
@@ -205,9 +201,9 @@
                 >
                 <select id="inputState" class="form-select">
                   <option selected hidden>Choose Operation Type</option>
-                  <option value="Maths">Full PL_PB_1Mbps</option>
-                  <option value="Science">Partial FHK_PB</option>
-                  <option value="Social">Imaging</option>
+                  <option>Full PL_PB_1Mbps</option>
+                  <option>Partial FHK_PB</option>
+                  <option>Partial PL_PB_1Mbps</option> 
                 </select>
               </div>
 
@@ -236,7 +232,7 @@
       <div
         class="text-center"
         style="
-          background-color:#3a648f;
+          background-color:#453f3c;
           color: #ffff;
           height: 50px;
           padding-top: 12px;
@@ -268,12 +264,18 @@
     <div style="text-align: center">
       <button type="submit" id="submit" class="btn btn-outline-success">Submit</button>
     </div>
-    </form>
-      
-    <br />
-    <br />
+  </form>
 
-    <!-- loader js -->
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); padding: 25px;">
+      © 2023 Copyright:
+      <a class="text-dark" href="https://tech.gov.bt/">GovTech Agency of Bhutan</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+      
+<!-- loader js -->
     <script>
       var loader = document.getElementById("preloader");
       window.addEventListener("load", function () {
@@ -309,6 +311,5 @@
       }
 
     </script> -->
-    
   </body>
 </html>
